@@ -13,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
             i <<- NULL
       }
       # the two function below create a special object that stores the numeric content
-      # of the "matrix" and chches its inverse.
+      # of the "matrix" and caches its inverse.
       get <- function() x
       setinv <- function(inverse) i <<- inverse
       getinv <- function() i
